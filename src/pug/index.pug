@@ -3,13 +3,149 @@ html
 head
   meta(charset='utf-8')
   meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
-  link(rel="stylesheet", href="style.css")
+  link(rel="stylesheet", href="css/styles.css")
   link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css' integrity='sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk' crossorigin='anonymous')
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
   title My Diploma Project
 body
-  h1 Hello, world!
+  .home-wrapper
+    header
+      .container
+        .row
+          .column.col-lg-4.col-md-3.col-sm-12.logo-type
+            img(src="img/logo-small.png", alt="logo-small")
+            img.logo-name(src="img/logo-name.png", alt="logo-name")
+          .column.col-lg-8.col-md-9.col-sm-12
+            nav.navbar.navbar-expand-lg.navbar-light
+              .navbar-brand
+                button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
+                  span.navbar-toggler-icon
+              #navbarNav.collapse.navbar-collapse
+                ul.navbar-nav
+                  li.nav-item.active
+                    a.nav-link(href='#home')
+                      | Home 
+                      span.sr-only  (current)
+                  li.nav-item
+                    a.nav-link(href='#') About
+                  li.nav-item
+                    a.nav-link(href='#') Expertise
+                  li.nav-item
+                    a.nav-link(href='#') Teams
+                  li.nav-item
+                    a.nav-link(href='#') Works
+                  li.nav-item
+                    a.nav-link(href='#') People say
+                  li.nav-item
+                    a.nav-link(href='#') Contact
+    section#home 
+      #carouselExampleCaptions.carousel.slide(data-ride='carousel')
+        ol.carousel-indicators
+          li.active(data-target='#carouselExampleCaptions' data-slide-to='0')
+          li(data-target='#carouselExampleCaptions' data-slide-to='1')
+          li(data-target='#carouselExampleCaptions' data-slide-to='2')
+          li(data-target='#carouselExampleCaptions' data-slide-to='3')
+        .carousel-inner
+          .carousel-item.active.text-center
+            h5 We Are Awesome Creative Agency
+            .border-line
+            p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+            button Learn more
+            .carousel-inner
+          .carousel-item.text-center
+            h5 We Are Awesome Creative Agency
+            .border-line
+            p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+            button Learn more
+            .carousel-inner
+          .carousel-item.text-center
+            h5 We Are Awesome Creative Agency
+            .border-line
+            p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+            button Learn more
+            .carousel-inner
+          .carousel-item.text-center
+            h5 We Are Awesome Creative Agency
+            .border-line
+            p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+            button Learn more
+        a.carousel-control-prev(href='#carouselExampleCaptions' role='button' data-slide='prev')
+          span.carousel-control-prev-icon(aria-hidden='true')
+          span.sr-only Previous
+        a.carousel-control-next(href='#carouselExampleCaptions' role='button' data-slide='next')
+          span.carousel-control-next-icon(aria-hidden='true')
+          span.sr-only Next
+  section.about
+    .container
+      .row
+        .column.col-lg-5.col-md-6.col-sm-12.text-right
+          img.logos(src="img/logo1.png", alt="logo")
+        .column.col-lg-7.col-md-6.col-sm-12.text-left.our-story
+          h3 Our Story
+          p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus.
+          p Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+          button Learn more
+    .our-video
+      iframe(src='https://www.youtube.com/embed/1NrJcusn_a4' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+  section.expertise
+    .expertise-title.text-center
+      h5 EXPERTISE
+      p Lorem ipsum dolor sit amet proin gravida nibh vel velit
+      .border-line
+    .work
+      .monitor
+        img(src="img/monitor.png", alt="monitor")
+        h5 WEB DESIGN and DEVELOPMENT
+        p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+      .paint
+        img(src="img/paint.png", alt="paint")
+        h5 BRANDING IDENTITY
+        p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+      .mobile
+        img(src="img/mobile.png", alt="mobile")
+        h5 MOBILE APP
+        p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+      .round
+        img(src="img/round.png", alt="round")
+        h5 SEARCH ENGINE OPTIMIZATION
+        p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+      .game
+        img(src="img/game.png", alt="game")
+        h5 GAME DEVELOPMENT
+        p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+      .heard
+        img(src="img/heard.png", alt="heard")
+        h5 MADE WITH LOVE
+        p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+  section.team.text-center
+    .our-team
+      h5 Meet Our Amazing team
+      p Lorem ipsum dolor sit amet proin gravida nibh vel velit
+      .border-line
+    .img-team
+      .photo
+        img(src="img/semf_ucuk.png", alt="semf_ucuk")
+        h5 Semf Ucuk
+        p CEO and FOUNDER
+      .photo
+        img(src="img/dik_adalin.png", alt="dik_adalin")
+        h5 Dik Adalin
+        p ENGINEERING
+      .photo
+        img(src="img/jeng_kol.png", alt="jeng_kol")
+        h5 Jeng Kol
+        p DESIGNER
+      .photo
+        img(src="img/pet_romak.png", alt="pet_romak")
+        h5 Pet Romak
+        p MARKETING
+    .dream-team
+      p Become part of our dream team, let’s join us ! 
+      button WE ARE HIRING
 
-
+      
 
   script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous')
   script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js' integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo' crossorigin='anonymous')
