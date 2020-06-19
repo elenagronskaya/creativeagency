@@ -254,3 +254,81 @@ header .container {
     margin-bottom: 70px;
     font-family: Roboto;
     background-color: unset; }
+
+.our-work {
+  width: 100%;
+  padding: 0;
+  margin: 0; }
+  .our-work .project {
+    display: flex;
+    justify-content: space-around; }
+    .our-work .project h5 {
+      font-family: PlayfairDisplay;
+      font-size: 22px;
+      font-weight: 800;
+      color: #413d4b;
+      margin-top: 72px;
+      text-transform: uppercase; }
+    .our-work .project p {
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 100;
+      color: #413d4b;
+      margin-top: 70px; }
+      .our-work .project p i {
+        margin-left: 10px; }
+  .our-work #grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    margin: 75px auto 0 auto;
+    max-width: 1600px; }
+    .our-work #grid img {
+      width: 270px;
+      height: 200px; }
+  .our-work button {
+    border: 1px solid #00e0d0;
+    color: #00e0d0;
+    width: 140px;
+    height: 40px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Roboto;
+    background-color: unset;
+    display: block;
+    margin: 70px auto; }
+
+.team .quote h5 {
+  font-family: PlayfairDisplay;
+  font-size: 100px;
+  font-weight: 400;
+  color: #f4f4f6;
+  padding-top: 70px; }
+
+.team .quote p {
+  font-family: PlayfairDisplay;
+  font-size: 16px;
+  font-weight: 400;
+  color: #f4f4f6;
+  margin: 43px auto;
+  max-width: 770px; }
+
+.team .container .carousel-item {
+  margin-top: 55px; }
+  .team .container .carousel-item h5 {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 800;
+    color: #f4f4f6; }
+  .team .container .carousel-item p {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 100;
+    color: #f4f4f6;
+    margin-top: 15px;
+    margin-bottom: 0; }
+  .team .container .carousel-item img.bigger {
+    margin: 45px 15px;
+    width: 70px;
+    height: 70px; }
