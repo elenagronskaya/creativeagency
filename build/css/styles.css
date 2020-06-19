@@ -1,5 +1,6 @@
 .container {
-  max-width: 940px !important; }
+  max-width: 940px !important;
+  padding: 0 !important; }
 
 H1, H2, H3, p, span {
   font-family: Roboto;
@@ -380,7 +381,7 @@ header .container {
     font-weight: 800;
     color: #413d4b;
     margin-bottom: 0;
-    padding-left: 30px; }
+    padding-left: 80px; }
   .good-news .brands img {
     display: block; }
   .good-news .brands img.zara {
@@ -396,6 +397,80 @@ header .container {
   .good-news .brands img.puma {
     padding-bottom: 30px; }
   .good-news .brands .brand-left-col {
-    padding-left: 45px; }
+    padding-left: 100px; }
   .good-news .brands .brand-right-col {
-    padding-right: 45px; }
+    padding-left: 80px; }
+
+footer {
+  background: url(../img/background-footer.png) no-repeat rgba(28, 23, 58, 0.8);
+  background-size: cover;
+  background-blend-mode: multiply;
+  margin: 0;
+  padding: 70px 0 45px 0;
+  width: 100%; }
+  footer .container {
+    display: flex;
+    justify-content: space-between; }
+    footer .container .logo-footer {
+      max-width: 295px; }
+      footer .container .logo-footer .small {
+        padding-bottom: 28px;
+        padding-right: 10px; }
+      footer .container .logo-footer .name {
+        margin-bottom: 35px; }
+      footer .container .logo-footer p {
+        font-size: 14px;
+        font-family: Roboto;
+        font-weight: 100;
+        color: #a9a6b6; }
+    footer .container .contact {
+      padding-top: 15px;
+      max-width: 295px; }
+      footer .container .contact h5 {
+        font-size: 15px;
+        font-family: Roboto;
+        font-weight: 800;
+        color: #a9a6b6;
+        padding-bottom: 37px;
+        margin: 0;
+        text-transform: uppercase; }
+      footer .container .contact .contact-item {
+        padding-bottom: 25px; }
+        footer .container .contact .contact-item span {
+          font-size: 14px;
+          font-family: Roboto;
+          font-weight: 100;
+          color: #a9a6b6;
+          padding-bottom: 25px; }
+        footer .container .contact .contact-item i.fal {
+          font-size: 15px;
+          font-weight: 400;
+          color: #a9a6b6;
+          margin-right: 15px; }
+    footer .container .social {
+      max-width: 295px;
+      padding-top: 15px; }
+      footer .container .social h5 {
+        font-size: 15px;
+        font-family: Roboto;
+        font-weight: 800;
+        color: #a9a6b6;
+        padding-bottom: 37px;
+        margin: 0;
+        text-transform: uppercase; }
+      footer .container .social input {
+        width: 210px;
+        height: 45px;
+        color: #cecbd7;
+        padding-left: 20px;
+        background-color: unset;
+        border: 1px solid #cecbd7; }
+      footer .container .social button {
+        width: 70px;
+        height: 45px;
+        background-color: #a29ab4;
+        margin-left: 10px; }
+      footer .container .social .social-footer {
+        display: flex; }
+        footer .container .social .social-footer i.fab {
+          margin-right: 5px; }
