@@ -146,7 +146,7 @@ body
       p Become part of our dream team, let’s join us ! 
       button WE ARE HIRING
   section.our-work
-    .project
+    .project.container
       h5 Our work
       p See All Project in dribbble
         i.fal.fa-chevron-right 
@@ -207,6 +207,39 @@ body
         a.carousel-control-next(href='#carouselExampleControls' role='button' data-slide='next')
           span.carousel-control-next-icon(aria-hidden='true')
           span.sr-only Next
+  section.good-news
+    .container
+      .row
+        .column.col-lg-6.col-md-12.col-md-12
+          h5 GIVE US A GOOD NEWS
+          form
+            .form-group  
+              input#exampleInputName.form-control(type='name' aria-describedby='nameHelp' placeholder='Name')
+            .form-group
+              input#exampleInputEmail.form-control(type='email' aria-describedby='emailHelp' placeholder='Email')
+            .form-group  
+              input#exampleInputSubject.form-control(type='subject' aria-describedby='subjectHelp' placeholder='Subject')
+            .form-group
+              textarea#exampleFormControlTextarea1.form-control(rows='10') Your Massage
+            button(type='submit') Submit
+
+        .column.col-lg-6.col-md-12.col-md-12.brands
+          h5 OUR HAPPY CLIENT
+          .row
+            .column.col-lg-6.col-md-6.col-md-6.brand-left-col
+              img.zara(src="img/zara.png", alt="zara")
+              img.barneys(src="img/barneys.png", alt="barneys")
+              img.calvin(src="img/calvin_klane.png", alt="calvin_klane")
+              img.converce(src="img/converce.png", alt="converce")
+              img.levis(src="img/levis.png", alt="levis")
+            .column.col-lg-6.col-md-6.col-md-6.brand-right-col
+              img.mango(src="img/mango.png", alt="mango")
+              img.gucci(src="img/gucci.png", alt="gucci")
+              img.nike(src="img/nike1.png", alt="nike")
+              img.puma(src="img/puma.png", alt="puma")
+              img.billabong(src="img/billabong.png", alt="billabong")
+     
+
 
 
 
