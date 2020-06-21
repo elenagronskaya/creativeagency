@@ -41,16 +41,21 @@ header .container {
       border-color: #ffffff; }
     header .container .navbar .navbar-nav {
       padding-top: 35px; }
-      header .container .navbar .navbar-nav .nav-item .nav-link {
-        color: #ffffff;
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 13px;
-        margin-left: 26px;
-        line-height: 11px;
-        padding: 0; }
-      header .container .navbar .navbar-nav .nav-item.active .nav-link {
-        color: #00e0d0; }
+      @media (max-width: 991.98px) {
+        header .container .navbar .navbar-nav {
+          padding-top: 15px; } }
+      header .container .navbar .navbar-nav .nav-item {
+        margin-bottom: 10px; }
+        header .container .navbar .navbar-nav .nav-item .nav-link {
+          color: #ffffff;
+          text-transform: uppercase;
+          font-weight: 700;
+          font-size: 13px;
+          margin-left: 26px;
+          line-height: 11px;
+          padding: 0; }
+        header .container .navbar .navbar-nav .nav-item.active .nav-link {
+          color: #00e0d0; }
 
 #home .carousel-indicators li {
   border-radius: 90%;
@@ -68,7 +73,7 @@ header .container {
   line-height: 18px;
   color: #ffffff;
   margin-bottom: 30px; }
-  @media (max-width: 767.98px) {
+  @media (max-width: 991.98px) {
     #home .carousel-item h5 {
       padding-top: 60px;
       line-height: 30px; } }
@@ -258,23 +263,25 @@ header .container {
   margin: 0;
   padding: 0;
   width: 100%; }
-  .team .our-team h5 {
-    font-family: PlayfairDisplay;
-    font-size: 22px;
-    font-weight: 800;
-    color: #f4f4f6;
-    padding-top: 72px;
-    text-transform: uppercase; }
-  .team .our-team p {
-    font-family: PlayfairDisplay;
-    font-size: 14px;
-    font-weight: 400;
-    color: #f4f4f6;
-    margin-top: 15px; }
-  .team .our-team .border-line {
-    border-bottom: 3px solid #655c80;
-    width: 55px;
-    margin: 20px auto; }
+  .team .our-team {
+    padding: 0 5px 0 5px; }
+    .team .our-team h5 {
+      font-family: PlayfairDisplay;
+      font-size: 22px;
+      font-weight: 800;
+      color: #f4f4f6;
+      padding-top: 72px;
+      text-transform: uppercase; }
+    .team .our-team p {
+      font-family: PlayfairDisplay;
+      font-size: 14px;
+      font-weight: 400;
+      color: #f4f4f6;
+      margin-top: 15px; }
+    .team .our-team .border-line {
+      border-bottom: 3px solid #655c80;
+      width: 55px;
+      margin: 20px auto; }
   .team .img-team {
     display: flex;
     justify-content: space-between;
@@ -468,10 +475,13 @@ header .container {
   @media (max-width: 767.98px) {
     .good-news {
       padding-bottom: 40px; } }
-  @media (max-width: 767.98px) {
-    .good-news .row {
-      margin-left: 0;
-      margin-right: 0; } }
+  .good-news .row {
+    padding-left: 10px; }
+    @media (max-width: 767.98px) {
+      .good-news .row {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0; } }
   .good-news h5 {
     padding-bottom: 35px;
     font-family: PlayfairDisplay;
@@ -492,7 +502,8 @@ header .container {
     @media (max-width: 991.98px) {
       .good-news .form-group {
         display: block;
-        margin: 0 auto; } }
+        margin: 0 auto;
+        padding-left: 10px; } }
     @media (max-width: 767.98px) {
       .good-news .form-group {
         width: unset; } }
@@ -536,31 +547,34 @@ header .container {
         padding: 0;
         text-align: center;
         padding-top: 30px; } }
-  @media (max-width: 767.98px) {
-    .good-news .brands .brand-left-col, .good-news .brands .brand-right-col {
-      padding: 0; } }
-  .good-news .brands .brand-left-col img, .good-news .brands .brand-right-col img {
-    display: block; }
+  .good-news .brands .brand-left-col, .good-news .brands .brand-right-col {
+    padding-left: 80px;
+    padding-right: 0; }
     @media (max-width: 991.98px) {
-      .good-news .brands .brand-left-col img, .good-news .brands .brand-right-col img {
-        margin: 30px auto;
+      .good-news .brands .brand-left-col, .good-news .brands .brand-right-col {
         padding: 0; } }
-  .good-news .brands .brand-left-col img.zara, .good-news .brands .brand-right-col img.zara {
-    padding-bottom: 45px; }
-  .good-news .brands .brand-left-col img.barneys, .good-news .brands .brand-left-col .converce, .good-news .brands .brand-right-col img.barneys, .good-news .brands .brand-right-col .converce {
-    padding-bottom: 50px; }
-  .good-news .brands .brand-left-col img.calvin, .good-news .brands .brand-right-col img.calvin {
-    padding-bottom: 55px; }
-  .good-news .brands .brand-left-col img.mango, .good-news .brands .brand-right-col img.mango {
-    padding-bottom: 60px; }
-  .good-news .brands .brand-left-col img.gucci, .good-news .brands .brand-left-col .nike, .good-news .brands .brand-right-col img.gucci, .good-news .brands .brand-right-col .nike {
-    padding-bottom: 55px; }
-  .good-news .brands .brand-left-col img.puma, .good-news .brands .brand-right-col img.puma {
-    padding-bottom: 30px; }
-  .good-news .brands .brand-left-col .brand-left-col, .good-news .brands .brand-right-col .brand-left-col {
-    padding-left: 100px; }
-  .good-news .brands .brand-left-col .brand-right-col, .good-news .brands .brand-right-col .brand-right-col {
-    padding-left: 80px; }
+    .good-news .brands .brand-left-col img, .good-news .brands .brand-right-col img {
+      display: block; }
+      @media (max-width: 991.98px) {
+        .good-news .brands .brand-left-col img, .good-news .brands .brand-right-col img {
+          margin: 30px auto;
+          padding: 0; } }
+    .good-news .brands .brand-left-col img.zara, .good-news .brands .brand-right-col img.zara {
+      padding-bottom: 45px; }
+    .good-news .brands .brand-left-col img.barneys, .good-news .brands .brand-left-col .converce, .good-news .brands .brand-right-col img.barneys, .good-news .brands .brand-right-col .converce {
+      padding-bottom: 50px; }
+    .good-news .brands .brand-left-col img.calvin, .good-news .brands .brand-right-col img.calvin {
+      padding-bottom: 55px; }
+    .good-news .brands .brand-left-col img.mango, .good-news .brands .brand-right-col img.mango {
+      padding-bottom: 60px; }
+    .good-news .brands .brand-left-col img.gucci, .good-news .brands .brand-left-col .nike, .good-news .brands .brand-right-col img.gucci, .good-news .brands .brand-right-col .nike {
+      padding-bottom: 55px; }
+    .good-news .brands .brand-left-col img.puma, .good-news .brands .brand-right-col img.puma {
+      padding-bottom: 30px; }
+    .good-news .brands .brand-left-col .brand-left-col, .good-news .brands .brand-right-col .brand-left-col {
+      padding-left: 100px; }
+    .good-news .brands .brand-left-col .brand-right-col, .good-news .brands .brand-right-col .brand-right-col {
+      padding-left: 80px; }
 
 footer {
   background: url(../img/background-footer.png) no-repeat rgba(28, 23, 58, 0.8);
@@ -645,7 +659,8 @@ footer {
         width: 70px;
         height: 45px;
         background-color: #a29ab4;
-        margin-left: 10px; }
+        margin-left: 10px;
+        border: 0; }
       footer .container .social .social-footer {
         display: flex; }
         @media (max-width: 991.98px) {

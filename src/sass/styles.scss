@@ -78,8 +78,12 @@ header {
             .navbar-nav 
             {
                 padding-top: 35px;
+                @include media-breakpoint-down(md) {
+                    padding-top: 15px;
+                }
                 .nav-item 
                 {   
+                    margin-bottom: 10px;
                     .nav-link 
                     {
                         color: #ffffff;
@@ -131,7 +135,7 @@ header {
     line-height: 18px;
     color: #ffffff;
     margin-bottom: 30px;
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
         padding-top: 60px;
         line-height: 30px;
    }
@@ -353,6 +357,7 @@ header {
     padding: 0;
     width: 100%;
     .our-team {
+        padding: 0 5px 0 5px;
         h5 {
             font-family: PlayfairDisplay;
             font-size: 22px;
@@ -613,9 +618,12 @@ header {
         padding-bottom: 40px;
     }
     .row {
+        padding-left: 10px;
         @include media-breakpoint-down(sm) {
            margin-left: 0;
            margin-right: 0;
+           padding: 0;
+           
         }
     }
     h5 {
@@ -639,6 +647,7 @@ header {
         @include media-breakpoint-down(md) {
            display: block;
            margin: 0 auto;
+           padding-left: 10px;
         }
         @include media-breakpoint-down(sm) {
             width: unset;
@@ -693,7 +702,9 @@ header {
             }
         }
         .brand-left-col, .brand-right-col {
-            @include media-breakpoint-down(sm) {
+            padding-left: 80px;
+            padding-right: 0;
+            @include media-breakpoint-down(md) {
                 padding: 0;
             }
         
@@ -832,6 +843,7 @@ footer {
                 height: 45px;
                 background-color: #a29ab4;
                 margin-left: 10px;
+                border: 0;
             }
             .social-footer {
                 display: flex;
