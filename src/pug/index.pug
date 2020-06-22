@@ -72,12 +72,6 @@ body
             .border-line
             p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
             button Learn more
-      a.carousel-control-prev(href='#carouselExampleCaptions' role='button' data-slide='prev')
-        span.carousel-control-prev-icon(aria-hidden='true')
-        span.sr-only Previous
-      a.carousel-control-next(href='#carouselExampleCaptions' role='button' data-slide='next')
-        span.carousel-control-next-icon(aria-hidden='true')
-        span.sr-only Next
   section.about
     .container
       .row
@@ -127,30 +121,35 @@ body
         h5 MADE WITH LOVE
         p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
   section.team.text-center
-    .our-team
-      h5 Meet Our Amazing team
-      p Lorem ipsum dolor sit amet proin gravida nibh vel velit
-      .border-line
-    .img-team
-        .photo
-          img(src="img/semf_ucuk.png", alt="semf_ucuk")
-          h5 Semf Ucuk
-          p CEO &amp; FOUNDER
-        .photo
-          img(src="img/dik_adalin.png", alt="dik_adalin")
-          h5 Dik Adalin
-          p ENGINEERING
-        .photo
-          img(src="img/jeng_kol.png", alt="jeng_kol")
-          h5 Jeng Kol
-          p DESIGNER
-        .photo
-          img(src="img/pet_romak.png", alt="pet_romak")
-          h5 Pet Romak
-          p MARKETING
-    .dream-team
-      p Become part of our dream team, let’s join us ! 
-      button WE ARE HIRING
+    .container
+      .our-team
+        h5 Meet Our Amazing team
+        p Lorem ipsum dolor sit amet proin gravida nibh vel velit
+        .border-line
+      .img-team
+        .photo-wrapper
+          .photo
+            img(src="img/semf_ucuk.png", alt="semf_ucuk")
+            h5 Semf Ucuk
+            p CEO &amp; FOUNDER
+        .photo-wrapper
+          .photo
+            img(src="img/dik_adalin.png", alt="dik_adalin")
+            h5 Dik Adalin
+            p ENGINEERING
+        .photo-wrapper
+          .photo
+            img(src="img/jeng_kol.png", alt="jeng_kol")
+            h5 Jeng Kol
+            p DESIGNER
+        .photo-wrapper
+          .photo
+            img(src="img/pet_romak.png", alt="pet_romak")
+            h5 Pet Romak
+            p MARKETING
+      .dream-team
+        p Become part of our dream team, let’s join us ! 
+        button WE ARE HIRING
   section.our-work
     .project.container
       h5 Our work

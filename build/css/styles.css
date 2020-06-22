@@ -299,12 +299,10 @@ header .container {
   .team .img-team {
     display: flex;
     justify-content: space-between;
-    width: 940px;
     margin: 0 auto;
     padding: 45px 0 70px 0; }
     @media (max-width: 991.98px) {
       .team .img-team {
-        max-width: 100%;
         flex-wrap: wrap;
         padding: 50px 0; } }
     @media (max-width: 767.98px) {
@@ -313,18 +311,27 @@ header .container {
         width: unset;
         padding-bottom: 45px; } }
     @media (max-width: 767.98px) {
-      .team .img-team .photo:last-child {
+      .team .img-team .photo-wrapper:last-child .photo {
         margin-bottom: 0; } }
+    .team .img-team .photo-wrapper {
+      margin: 0;
+      padding: 0;
+      border: 0; }
+      @media (max-width: 991.98px) {
+        .team .img-team .photo-wrapper {
+          width: 50%;
+          justify-content: center;
+          display: flex; } }
+      @media (max-width: 767.98px) {
+        .team .img-team .photo-wrapper {
+          width: 100%; } }
     .team .img-team .photo {
       width: 220px;
       min-height: 310px;
       border: 1px solid #78758c; }
       @media (max-width: 991.98px) {
         .team .img-team .photo {
-          margin: 0 100px 20px 100px; } }
-      @media (max-width: 767.98px) {
-        .team .img-team .photo {
-          margin: 0 auto 20px auto; } }
+          margin-bottom: 20px; } }
       .team .img-team .photo img {
         width: 220px;
         height: 230px; }

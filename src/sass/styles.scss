@@ -51,7 +51,7 @@ header {
             }
             .navbar-toggler {
                 border-color: #ffffff;
-              } 
+            } 
             .navbar-nav {
                 padding-top: 17px;
                 @include media-breakpoint-down(md) {
@@ -369,11 +369,9 @@ header {
     .img-team {
         display: flex;
         justify-content: space-between;
-        width: 940px;
         margin: 0 auto;
         padding: 45px 0 70px 0;
         @include media-breakpoint-down(md) {
-            max-width: 100%;
             flex-wrap: wrap;
             padding: 50px 0;
         }
@@ -381,10 +379,24 @@ header {
             flex-direction: column;
             width: unset;
             padding-bottom: 45px;
+
         }
-        .photo:last-child {
+        .photo-wrapper:last-child .photo {
             @include media-breakpoint-down(sm) {
                 margin-bottom: 0;
+            }
+        }
+        .photo-wrapper {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            @include media-breakpoint-down(md) {
+                width: 50%;
+                justify-content: center;
+                display: flex;
+            }
+            @include media-breakpoint-down(sm) {
+                width: 100%;
             }
         }
         .photo {
@@ -392,10 +404,7 @@ header {
             min-height: 310px;
             border: 1px solid #78758c;
             @include media-breakpoint-down(md) {
-               margin: 0 100px 20px 100px;
-            }
-            @include media-breakpoint-down(sm) {
-                margin: 0 auto 20px auto;
+              margin-bottom: 20px;
             }
             img {
                 width: 220px;
