@@ -1,14 +1,4 @@
-// .container
-// {
-//     border: 1px solid red;
-//     .row
-//     {
-//         border: 1px solid green;
-//     }
-//     .col {
-//         border: 1px solid blue;
-//     }
-// }
+
 @import "node_modules/bootstrap/scss/functions";
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
@@ -22,42 +12,30 @@
     max-width: 940px !important;
     padding: 0 !important;
 }
-H1, H2, H3, p, span 
-{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 300; 
-    }
-.home-wrapper 
-{
+
+.home-wrapper {
     background: url(../img/background.png) no-repeat  rgba(52, 43, 86, 1);
     background-size:cover;
     background-blend-mode: multiply;
     margin: 0;
-    padding: 0;
     width: 100%;
-    padding-bottom: 64px;
+    padding: 17px 0 205px 0;
+    position: relative;
+    @include media-breakpoint-down(md) {
+        padding-bottom: 150px;
+    }
     @include media-breakpoint-down(sm) {
         padding-bottom: 32px;
     }
 }
-
 header {
-    
-
-    .container 
-    {
+    .container {
         padding: 0;
         max-width: 940px;
-
-        
-        .logo-type 
-        {
-            margin-top: 17px;
+        .logo-type {
             @include media-breakpoint-down(md) {
                 margin-left: 10px;
             }
-            
             .logo-name {
                 margin-left: 15px;
             }
@@ -71,21 +49,17 @@ header {
             .navbar-toggler-icon {
                 background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
             }
-
             .navbar-toggler {
                 border-color: #ffffff;
               } 
-            .navbar-nav 
-            {
-                padding-top: 35px;
+            .navbar-nav {
+                padding-top: 17px;
                 @include media-breakpoint-down(md) {
                     padding-top: 15px;
                 }
-                .nav-item 
-                {   
+                .nav-item {   
                     margin-bottom: 10px;
-                    .nav-link 
-                    {
+                    .nav-link {
                         color: #ffffff;
                         text-transform: uppercase;
                         font-weight: 700; 
@@ -94,145 +68,142 @@ header {
                         line-height: 11px;
                         padding: 0;
                     }   
-                    &.active
-                    {
-                        .nav-link 
-                        {
+                    &.active{
+                        .nav-link {
                             color: rgb(0,224,208) ;
                         }
                     }
-                }
-                
-                
+                }       
             }      
-        
         }
     } 
 }
 #home {
-    .carousel-indicators {
-        li {
-            border-radius: 90%;
-            width: 10px;
-            height: 10px;
+    .carousel.slide{
+        position: unset;
+        .carousel-indicators {
+            padding-bottom: 70px;
+            margin-bottom: 0;
+            @include media-breakpoint-down(sm) {
+                padding-bottom: 50px;
+            }
+            li {
+                border-radius: 90%;
+                width: 10px;
+                height: 10px;
+            }    
         }
-        
-    }
-   
-    .carousel-indicators .active{
-        background-color: rgb(0,224,208);
-    }
+        .carousel-indicators .active{
+            background-color: rgb(0,224,208);
+        }
+            .carousel-item {
+                h5 {
+                font-family: PlayfairDisplay ;
+                padding: 160px 0 25px 0;
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 18px;
+                color: #ffffff;
+                margin: 0;
+                @include media-breakpoint-down(md) {
+                    padding-top: 60px;
+                    line-height: 30px;
+                }
+                }
 
+                p {
+                max-width: 770px;
+                margin: 0 auto;
+                font-size: 14px;
+                color: #ffffff;
+                padding: 30px 0 50px 0;
+                @include media-breakpoint-down(md) {
+                    max-width: 600px;
+                }
+                @include media-breakpoint-down(sm) {
+                    max-width: 300px;
+                }
+                }
 
-.carousel-item 
-{
-    
-    h5 {
-    font-family: PlayfairDisplay ;
-    padding-top: 160px;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 18px;
-    color: #ffffff;
-    margin-bottom: 30px;
-    @include media-breakpoint-down(md) {
-        padding-top: 60px;
-        line-height: 30px;
-   }
+                .border-line {
+                    border-bottom: 1px solid rgb(0,224,208);
+                    width: 55px;
+                    margin: 0 auto;
+                }
+                button {
+                    border: 1px solid rgb(0,224,208);
+                    color: rgb(0,224,208);
+                    width: 120px;
+                    height: 40px;
+                    text-transform: uppercase;
+                    font-size: 16px;
+                    font-weight: 500;
+                    font-family: Roboto;
+                    background-color: unset;
+                    @include media-breakpoint-down(sm) {
+                    margin-bottom: 65px;
+                }
+            }
     }
-    p {
-    max-width: 770px;
-    margin: 30px auto 0 auto;
-    font-size: 14px;
-    color: #ffffff;
-    @include media-breakpoint-down(md) {
-         max-width: 600px;
-    }
-    @include media-breakpoint-down(sm) {
-         max-width: 300px;
-    }
-
-    }
-    .border-line {
-        border-bottom: 1px solid rgb(0,224,208);
-        width: 55px;
-        margin: 20px auto 0 auto;
-    }
-    button {
-        border: 1px solid rgb(0,224,208);
-        color: rgb(0,224,208);
-        width: 120px;
-        height: 40px;
-        text-transform: uppercase;
-        font-size: 16px;
-        font-weight: 500;
-        margin-top: 52px;
-        margin-bottom: 125px;
-        font-family: Roboto;
-        background-color: unset;
-        @include media-breakpoint-down(sm) {
-           margin-bottom: 65px;
-       }
-    }
-
 } 
     
 }
 .about {
+    padding: 70px 0;
+    @include media-breakpoint-down(sm) {
+        padding: 50px 0;
+    }
     .row {
         margin: 0;
     }
     .logos {
         width: 235px;
         height: 228px;
-        margin-top: 70px;
-        margin-right: 100px;
+        // margin-right: 100px;
         @include media-breakpoint-down(md) {
             margin-left: 10px;
             align-items: center;
-            margin: 35px auto;
-            display: block;
-            
+            margin: 0 auto;
+            display: block;   
         }
     }
     .our-story-logo {
         @include media-breakpoint-down(sm) {
             align-items: center;
             margin: 0 auto;
+            padding-bottom: 15px;
         }
     }
-
     .our-story {
         padding: 0;
         @include media-breakpoint-down(md) {
             text-align: center;
             padding: 0;
         }
-    
         h3 {
             font-family: PlayfairDisplay;
             font-weight: 700;
             font-size: 22px;
-            margin-top: 70px;
+            padding-bottom: 25px;
             color: #5a5763;
+            margin: 0;
             @include media-breakpoint-down(sm) {
                 margin-top: 0;
             }
-
         }
         p {
             font-family: Poboto;
             font-size: 14px;
             font-weight: 400;
-            margin-top: 25px;
             color: #5a5763;
+            padding: 0 0 30px 0;
+            margin: 0;
             @include media-breakpoint-down(md){
                 padding-left: 10px;
                 padding-right: 10px;
             }
             @include media-breakpoint-down(sm) {
-                padding: 10px;
-                margin-top: 15px;
+                padding: 15px;
             }
         }
         button {
@@ -243,74 +214,84 @@ header {
             text-transform: uppercase;
             font-size: 16px;
             font-weight: 500;
-            margin-top: 35px;
-            margin-bottom: 70px;
             font-family: Roboto;
             background-color: unset;
     }    }
-
-    .our-video {
-        iframe {
+}    
+.our-video {
+    iframe {
         width: 100%;
         height: 550px;
-        }
+            }
+}
+.expertise {
+    padding: 70px 0 70px 0;
+    @include media-breakpoint-down(sm) {
+        padding: 50px 0;
     }
-}   .expertise-title {
+   .expertise-title {
         h5 {
-            margin-top: 70px;
             font-family: PlayfairDisplay;
             font-size: 22px;
             font-weight: 800;
             color: #5a5763;
+            margin: 0;
+            padding-bottom: 15px;
         }
         p {
             font-family: PlayfairDisplay;
             font-size: 14px;
             font-weight: 400;
             color: #5a5763;
-            margin-top: 15px;
+            padding-bottom: 20px;
+            margin: 0;
         }
         .border-line {
             border-bottom: 3px solid #c6c4c9;
             width: 55px;
-            margin: 20px auto 0 auto;
-            margin-top: 19px;
+            margin: 0px auto;
         }
-}
+    }
     .work {
         display: flex;
-        margin: 47px auto 70px auto;
+        margin: 0 auto;
         flex-wrap: wrap;
         text-align: center!important;
         max-width: 1110px;
         justify-content: center;
+        padding-top: 30px;
         .monitor, .paint, .mobile, .round, .game, .heard{
             border: 1px solid #5a5763;
             width: 320px;
+                .pkt {
+                    height: 115px;
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+                    }
             @include media-breakpoint-down(md) {
                 border: 1px solid #c6c4c9 !important;
             }
-        
             img {
                 height: 50px;
                 display: block;
-                margin: 35px auto;
             }
-
             h5 {
                 font-family: roboto;
                 font-size: 14px;
                 font-weight: 700;
-                margin-top: 38px;
+                padding-bottom: 35px;
+                margin-bottom: 0;
                 color: #5a5763;
             }
             p {
                 font-family: roboto;
                 font-size: 14px;
                 font-weight: 100;
-                margin: 35px auto 40px auto;
+                margin: 0 auto;
                 width: 255px;
                 color: #5a5763;
+                padding-bottom: 40px;  
         }   }
         .monitor {
             border: 1px solid #ebebeb;
@@ -318,7 +299,6 @@ header {
             border-top: none;
             border-left: none;
         }
-
         .paint {
             border: 1px solid #ebebeb;
             width: 320px;  
@@ -329,7 +309,6 @@ header {
             width: 320px;
             border-top: none;
             border-right: none;
-
         }
         .round {
             border: 1px solid #ebebeb;
@@ -349,35 +328,42 @@ header {
             border-right: none;
         }
     }
+}
 .team {
     background: url(../img/background.png) no-repeat  rgba(52, 43, 86, 1);
     background-size:cover;
     background-blend-mode: multiply;
     margin: 0;
-    padding: 0;
+    padding: 70px 0;
     width: 100%;
+    @include media-breakpoint-down(sm) {
+        padding: 50px 0;
+    }
     .our-team {
+        @include media-breakpoint-down(md) {
         padding: 0 5px 0 5px;
+        }
         h5 {
             font-family: PlayfairDisplay;
             font-size: 22px;
             font-weight: 800;
             color: #f4f4f6;
-            padding-top: 72px;
+            margin: 0;
             text-transform: uppercase;
-
+            padding-bottom: 15px;
         }
         p {
             font-family: PlayfairDisplay;
             font-size: 14px;
             font-weight: 400;
             color: #f4f4f6;
-            margin-top: 15px ;
+            padding-bottom: 15px;
+            margin: 0;
         }
         .border-line {
             border-bottom: 3px solid #655c80;
             width: 55px;
-            margin: 20px auto;
+            margin: 0px auto;
         }
     }
     .img-team {
@@ -385,25 +371,31 @@ header {
         justify-content: space-between;
         width: 940px;
         margin: 0 auto;
+        padding: 45px 0 70px 0;
         @include media-breakpoint-down(md) {
             max-width: 100%;
             flex-wrap: wrap;
+            padding: 50px 0;
         }
         @include media-breakpoint-down(sm) {
             flex-direction: column;
             width: unset;
+            padding-bottom: 45px;
+        }
+        .photo:last-child {
+            @include media-breakpoint-down(sm) {
+                margin-bottom: 0;
+            }
         }
         .photo {
             width: 220px;
             min-height: 310px;
             border: 1px solid #78758c;
-            margin-top: 45px;
             @include media-breakpoint-down(md) {
-               margin-right: 75px;
-               margin-left: 75px;
+               margin: 0 100px 20px 100px;
             }
             @include media-breakpoint-down(sm) {
-                margin: 20px auto;
+                margin: 0 auto 20px auto;
             }
             img {
                 width: 220px;
@@ -416,7 +408,6 @@ header {
                 font-weight: 800;
                 color: #f3f3f5;
                 margin-top: 20px;
-
             }
             p {
                 text-transform: uppercase;
@@ -427,7 +418,6 @@ header {
                 margin: 12px 0 27px 0;
             }
         }
-
     }
     .dream-team {
         p {
@@ -435,11 +425,11 @@ header {
             font-size: 14px;
             font-weight: 100;
             color: #f3f3f3;
-            margin-top: 70px;
+            padding-bottom: 30px;
+            margin: 0;
             @include media-breakpoint-down(sm) {
                 margin-top: 10px;
             }
-
         }
         button {
             width: 140px;
@@ -449,21 +439,18 @@ header {
             text-transform: uppercase;
             font-size: 16px;
             font-weight: 500;
-            margin-top: 28px;
-            margin-bottom: 70px;
             font-family: Roboto;
             background-color: unset;
-            @include media-breakpoint-down(sm) {
-                margin-bottom: 50px;
-            }
         }
     }
-
 }
 .our-work {
     width: 100%;
-    padding: 0;
+    padding: 70px 0;
     margin: 0;
+    @include media-breakpoint-down(sm) {
+        padding: 50px 0;
+    }
     .project {
         display: flex;
         justify-content: space-between;
@@ -475,16 +462,15 @@ header {
             font-size: 22px;
             font-weight: 800;
             color: #413d4b;
-            margin-top: 70px;
+            margin-bottom: 0;
             text-transform: uppercase;
- 
         }
         p {
             font-family: Roboto;
             font-size: 14px;
             font-weight: 100;
             color: #413d4b;
-            margin-top: 70px;
+            margin-bottom: 0;
             i {
                 margin-left: 10px;
             }
@@ -494,21 +480,18 @@ header {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 200px 200px;
-        margin: 75px auto 0 auto;
+        margin:  0 auto;
+        padding: 75px 0;
         @include media-breakpoint-down(md) {
             grid-template-columns: 1fr 1fr 1fr 1fr ;
             grid-template-rows: 150px 150px 150px;
-
         }
         @include media-breakpoint-down(sm) {
             grid-template-columns: 1fr 1fr 1fr ;
             grid-template-rows: 100px 100px 100px 100px;
-
+            padding: 50px 0;
         }
-       
-
         img {
-            
             width: 100%;
             height: 200px;
             @include media-breakpoint-down(md) {
@@ -517,7 +500,6 @@ header {
             @include media-breakpoint-down(sm) {
                 height: 100px;
             }
-
         }
     }
     button {
@@ -531,10 +513,7 @@ header {
         font-family: Roboto;
         background-color: unset;
         display: block;
-        margin: 70px auto;
-        @include media-breakpoint-down(sm) {
-            margin: 35px auto;
-        }
+        margin: 0 auto;
     }
 }
 .team {
@@ -544,13 +523,16 @@ header {
             font-size: 100px;
             font-weight: 800;
             color: #f4f4f6;
-            padding-top: 70px;
+            margin: 0;
+            padding-bottom: 45px;
+            height: 145px;
             @include media-breakpoint-down(md) {
-                padding-top: 50px;
+                padding-top:0;
                 font-size: 80px;
+                padding-bottom: 0;
+                height: unset;
             }
             @include media-breakpoint-down(sm) {
-                padding-top: 30px;
                 font-size: 50px;
             }
         }
@@ -559,32 +541,31 @@ header {
             font-size: 16px;
             font-weight: 400;
             color: #f4f4f6;
-            margin: 43px auto;
+            margin: 0 auto;
             max-width: 770px;
+            padding-bottom: 55px;
             @include media-breakpoint-down(md) {
-                margin: 20px auto;
-                padding-left: 10px;
-                padding-right: 10px;
+                margin: 0 auto;
+                padding: 20px 10px 55px 10px;
             }
         }
     }
     .container {
         .carousel-item {
-            margin-top: 55px;
-
             h5 {
                 font-family: Roboto;
                 font-size: 14px;
                 font-weight: 800;
                 color: #f4f4f6;
                 text-transform: uppercase;
+                margin: 0;
+                padding-bottom: 15px;
             }
             p {
                 font-family: Roboto;
                 font-size: 13px;
                 font-weight: 100;
                 color: #f4f4f6;
-                margin-top: 15px;
                 margin-bottom: 0;
             }
             img {
@@ -597,33 +578,27 @@ header {
                 width: 100px;
                 height: 100px;
                 transition: all 0.2s ease-in-out;
-
                 &:hover {
                   cursor: pointer;
                   transform: scale(2);
                   transition: all 0.2s ease-in-out;
                 }
-
-            }
-
-            
-        }    
-        
+            }    
+        }        
     }
 }
 .good-news {
     width: 100%;
-    padding: 70px 0 115px 0;
+    padding: 70px 0;
     @include media-breakpoint-down(sm) {
-        padding-bottom: 40px;
+        padding: 50px 0;
     }
     .row {
         padding-left: 10px;
         @include media-breakpoint-down(sm) {
            margin-left: 0;
            margin-right: 0;
-           padding: 0;
-           
+           padding: 0;   
         }
     }
     h5 {
@@ -632,6 +607,7 @@ header {
         font-size: 22px;
         font-weight: 800;
         color: #413d4b;
+        margin-bottom: 0;
         @include media-breakpoint-down(md) {
             text-align: center;
         }
@@ -652,7 +628,6 @@ header {
         @include media-breakpoint-down(sm) {
             width: unset;
         }
-
         input {
             color: #b9b7bd;
             font-family: Roboto;
@@ -682,8 +657,7 @@ header {
         display: block;
         @include media-breakpoint-down(md) {
             margin: 0 auto;
-        }
-        
+        }    
     }
     .brands {
         h5 {
@@ -693,12 +667,12 @@ header {
             font-weight: 800;
             color: #413d4b;
             margin-bottom: 0;
-            padding-left: 80px;
+            padding-left: 70px;
             @include media-breakpoint-down(md) {
                 padding: 0;
                 text-align: center;
                 padding-top: 30px;
-                
+                padding-bottom: 30px;   
             }
         }
         .brand-left-col, .brand-right-col {
@@ -707,16 +681,17 @@ header {
             @include media-breakpoint-down(md) {
                 padding: 0;
             }
-        
             img {
                 display: block;
                 @include media-breakpoint-down(md) {
                     margin: 30px auto;
                     padding: 0;
                 }
+                @include media-breakpoint-down(sm) {
+                    margin: 0 auto;
+                    padding: 0;
+                }
             }
-                
-            
                 img.zara {
                     padding-bottom: 45px;
                 }
@@ -728,7 +703,10 @@ header {
                 }
                 img.mango {
                     padding-bottom: 60px;
-                    
+                    @include media-breakpoint-down(sm) {
+                        margin: 0 auto;
+                        padding: 40px;
+                    }   
                 }
                 img.gucci, .nike  {
                     padding-bottom: 55px;
@@ -751,34 +729,36 @@ footer {
     background-size:cover;
     background-blend-mode: multiply;
     margin: 0;
-    padding: 70px 0 45px 0;
+    padding: 70px 0;
     width: 100%;
+    @include media-breakpoint-down(sm) {
+        padding: 50px 0;
+    }
     .container {
         display: flex;
         justify-content: space-between;
         @include media-breakpoint-down(md) {
             flex-direction: column;
         }
-
         .logo-footer {
             max-width: 295px;
             @include media-breakpoint-down(md) {
                 margin: 0 auto;
                 text-align: center;
             }
-
             .small {
                 padding-bottom: 28px;
                 padding-right: 10px;
             }
             .name {
-                margin-bottom: 35px;  
+                padding-bottom: 35px;  
             }
             p {
                 font-size: 14px;
                 font-family: Roboto;
                 font-weight: 100;
                 color: #a9a6b6;
+                margin-bottom: 0;
             }
         }
         .contact {
@@ -787,6 +767,7 @@ footer {
             @include media-breakpoint-down(md) {
                 margin: 0 auto;
                 text-align: center;
+                padding-top: 25px;
             }
             h5 {
                 font-size: 15px;
@@ -796,15 +777,24 @@ footer {
                 padding-bottom: 37px;
                 margin: 0;
                 text-transform: uppercase;
+                @include media-breakpoint-down(md) {
+                    padding-bottom: 15px;
+                }
             }
             .contact-item {
                 padding-bottom: 25px;
+                @include media-breakpoint-down(md) {
+                    padding-bottom: 10px;
+                }
                 span {
                     font-size: 14px;
                     font-family: Roboto;
                     font-weight: 100;
                     color: #a9a6b6;
                     padding-bottom: 25px;
+                    @include media-breakpoint-down(md) {
+                        padding-bottom: 10px;
+                    }
                 }
                 i.fal {
                     font-size: 15px;
@@ -820,6 +810,7 @@ footer {
             @include media-breakpoint-down(md) {
                 margin: 0 auto;
                 text-align: center;
+                padding-top: 25px;
             }
             h5 {
                 font-size: 15px;
@@ -829,6 +820,9 @@ footer {
                 padding-bottom: 37px;
                 margin: 0;
                 text-transform: uppercase;
+                @include media-breakpoint-down(md) {
+                    padding-bottom: 25px;
+                }
             }
             input {
                 width: 210px;
@@ -868,9 +862,40 @@ footer {
                 }   }
             }
         }
-
     }
-
+    .container.copyright {
+        @include media-breakpoint-down(md) {
+            display: flex;
+            text-align: center;
+        }
+        .copyright-item {
+            padding-top: 50px;
+            @include media-breakpoint-down(md) {
+                padding-top: 35px;
+            }
+            span:last-child {
+                margin-right: 0;
+            }
+            span {
+                font-size: 14px;
+                font-family: Roboto;
+                font-weight: 100;
+                color: #a9a6b6;
+                text-transform: uppercase;
+                margin-right: 20px;   
+            }
+        }
+        .copyright-name {
+            font-size: 14px;
+            font-family: Roboto;
+            font-weight: 100;
+            color: #a9a6b6;
+            padding-top: 50px;
+            @include media-breakpoint-down(md) {
+                padding-top: 15px;
+            }
+        }
+    }
 }
     
 
