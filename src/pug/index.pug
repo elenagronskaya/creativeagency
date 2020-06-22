@@ -30,17 +30,17 @@ body
                       | Home 
                       span.sr-only  (current)
                   li.nav-item
-                    a.nav-link(href='#') About
+                    a.nav-link(href='#about') About
                   li.nav-item
-                    a.nav-link(href='#') Expertise
+                    a.nav-link(href='#expertise') Expertise
                   li.nav-item
-                    a.nav-link(href='#') Teams
+                    a.nav-link(href='#teams') Teams
                   li.nav-item
-                    a.nav-link(href='#') Works
+                    a.nav-link(href='#works') Works
                   li.nav-item
-                    a.nav-link(href='#') People say
+                    a.nav-link(href='#peoplesay') People say
                   li.nav-item
-                    a.nav-link(href='#') Contact
+                    a.nav-link(href='#contact') Contact
     section#home 
       #carouselExampleCaptions.carousel.slide(data-ride='carousel')
         ol.carousel-indicators
@@ -72,7 +72,7 @@ body
             .border-line
             p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
             button Learn more
-  section.about
+  section#about.about
     .container
       .row
         .column.col-lg-5.col-md-4.col-sm-12.our-story-logo
@@ -84,7 +84,7 @@ body
           button Learn more
   section.our-video
       iframe(src='https://www.youtube.com/embed/1NrJcusn_a4' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
-  section.expertise
+  section#expertise.expertise
     .expertise-title.text-center
       h5 EXPERTISE
       p Lorem ipsum dolor sit amet proin gravida nibh vel velit
@@ -120,7 +120,7 @@ body
           img(src="img/heard.png", alt="heard")
         h5 MADE WITH LOVE
         p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
-  section.team.text-center
+  section#teams.team.text-center
     .container
       .our-team
         h5 Meet Our Amazing team
@@ -150,7 +150,7 @@ body
       .dream-team
         p Become part of our dream team, let’s join us ! 
         button WE ARE HIRING
-  section.our-work
+  section#works.our-work
     .project.container
       h5 Our work
       p See All Project in dribbble
@@ -212,7 +212,7 @@ body
         a.carousel-control-next(href='#carouselExampleControls' role='button' data-slide='next')
           span.carousel-control-next-icon(aria-hidden='true')
           span.sr-only Next
-  section.good-news
+  section#peoplesay.good-news
     .container
       .row
         .column.col-lg-6.col-md-12.col-md-12
@@ -243,7 +243,7 @@ body
               img.nike(src="img/nike1.png", alt="nike")
               img.puma(src="img/puma.png", alt="puma")
               img.billabong(src="img/billabong.png", alt="billabong")
-  footer
+  footer#contact
     .container
       .logo-footer
         img.small(src="img/logo-small.png", alt="logo-small")
